@@ -8,6 +8,7 @@ import { connect } from 'react-redux';
 import Header from '../Header/Header';
 import Login from '../Login/Login';
 import Signup from '../Signup/Signup';
+import PropTypes from 'prop-types';
 
 class App extends Component {
 
@@ -36,5 +37,10 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   addMovies: (movies) => dispatch(addMovies(movies))
 });
+
+App.propTypes = {
+  user: PropTypes.objectOf(PropTypes.string),
+  addMovies: PropTypes.func
+}
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));

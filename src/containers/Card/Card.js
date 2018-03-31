@@ -1,5 +1,6 @@
 import './Card.css';
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Card = ({movie}) => {
   const { title, overview, poster, rating } = movie
@@ -11,5 +12,14 @@ const Card = ({movie}) => {
     </div>
   );
 };
+
+Card.propTypes = {
+  movie: PropTypes.shape({
+    title: PropTypes.string,
+    overview: PropTypes.string,
+    poster: PropTypes.string,
+    rating: PropTypes.num
+  })
+}
 
 export default Card;

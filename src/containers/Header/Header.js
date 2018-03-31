@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { logOut } from '../../actions';
-
+import PropTypes from 'prop-types';
 
 const Header = (props) => {
   
@@ -36,4 +36,9 @@ const mapDispatchToProps = dispatch => ({
   logOut: () => dispatch(logOut())
 });
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Header));
+Header.propTypes = {
+  user: PropTypes.objectOf(PropTypes.string),
+  logOut: PropTypes.func
+}
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Header));  

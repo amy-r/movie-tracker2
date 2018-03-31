@@ -4,6 +4,7 @@ import { userLogin } from '../../apiCalls/apiCalls';
 import { validateUser } from '../../actions';
 import './Login.css';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
 export class Login extends Component {
   constructor() {
@@ -34,7 +35,6 @@ export class Login extends Component {
       });
     }
   }
-  
   
   render() {
     return (
@@ -67,4 +67,7 @@ const mapDispatchToProps = dispatch => ({
   validateUser: user => dispatch(validateUser(user))
 });
 
+Login.propTypes = {
+  validateUser: PropTypes.func
+}
 export default withRouter(connect(null, mapDispatchToProps)(Login));

@@ -2,6 +2,7 @@ import React from 'react';
 import './CardContainer.css';
 import { connect } from 'react-redux';
 import Card from '../Card/Card';
+import PropTypes from 'prop-types';
 
 const CardContainer = ({movies}) => {
   let displayCards;
@@ -23,5 +24,9 @@ const CardContainer = ({movies}) => {
 const mapStateToProps = state => ({
   movies: state.movies
 });
+
+CardContainer.propTypes = {
+  movies: PropTypes.array
+}
 
 export default connect(mapStateToProps)(CardContainer);
