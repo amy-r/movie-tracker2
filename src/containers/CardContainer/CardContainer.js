@@ -41,5 +41,5 @@ export default connect(mapStateToProps)(CardContainer);
 
 CardContainer.propTypes = {
   movies: PropTypes.array,
-  users: PropTypes.array
+  favorites: PropTypes.array
 };

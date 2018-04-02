@@ -9,6 +9,7 @@ import Header from '../Header/Header';
 import Login from '../Login/Login';
 import Signup from '../Signup/Signup';
 import Favorites from '../Favorites/Favorites';
+import PropTypes from 'prop-types';
 
 class App extends Component {
 
@@ -18,7 +19,6 @@ class App extends Component {
   }
 
   render() {
-    // const { user } = this.props;
     return (
       <div className="App">
         <Header />
@@ -31,12 +31,12 @@ class App extends Component {
   }
 }
 
-const mapStateToProps = state => ({
-  user: state.user
-});
-
 const mapDispatchToProps = dispatch => ({
   addMovies: (movies) => dispatch(addMovies(movies))
 });
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
+export default withRouter(connect(null, mapDispatchToProps)(App));
+
+App.propTypes = {
+  addMovies: PropTypes.func
+};

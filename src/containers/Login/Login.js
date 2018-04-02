@@ -4,14 +4,14 @@ import { userLogin, getFavorites } from '../../apiCalls/apiCalls';
 import { validateUser, setError, addFavorites } from '../../actions';
 import './Login.css';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
 export class Login extends Component {
   constructor() {
     super();
     this.state = {
       email: '',
-      password: '',
-
+      password: ''
     };
   }
 
@@ -81,3 +81,10 @@ const mapDispatchToProps = dispatch => ({
 });
 
 export default withRouter(connect(null, mapDispatchToProps)(Login));
+
+Login.propTypes = {
+  validateUser: PropTypes.func,
+  setError: PropTypes.func,
+  addFavorites: PropTypes.func,
+  history: PropTypes.object
+};

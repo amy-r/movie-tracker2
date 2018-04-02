@@ -3,7 +3,8 @@ import './Signup.css';
 import { userSignup } from '../../apiCalls/apiCalls';
 import { validateUser } from '../../actions';
 import { connect } from 'react-redux';
-import { withRouter } from "react-router-dom";
+import { withRouter } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 export class Signup extends Component {
   constructor() {
@@ -101,3 +102,8 @@ const mapDispatchToProps = dispatch => ({
 });
 
 export default withRouter(connect(null, mapDispatchToProps)(Signup));
+
+Signup.propTypes = {
+  validateUser: PropTypes.func,
+  history: PropTypes.object
+};

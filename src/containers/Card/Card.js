@@ -14,7 +14,7 @@ const Card = ({movie, user, setError, addFavoriteToStore, isFavorite, removeFavo
     if (!user.id) {
       const allErrorDivsArray = document.querySelectorAll(".addFaveError");
       allErrorDivsArray.forEach(errorDiv => {
-        errorDiv.classList.add("hidden")
+        errorDiv.classList.add("hidden");
       });
       const errorDiv = event.target.nextSibling;
       errorDiv.classList.remove("hidden");
