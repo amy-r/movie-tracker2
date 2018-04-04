@@ -18,7 +18,7 @@ class App extends Component {
     super();
     this.state = {
       error: ''
-    }
+    };
   }
 
   async componentDidMount() {
@@ -27,7 +27,7 @@ class App extends Component {
       const cleanMovies = movieCleaner(movies);
       this.props.addMovies(cleanMovies);     
     } catch (error) {
-      this.setState({error})
+      this.setState({error});
     }
   }
 
@@ -35,7 +35,8 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Route exact path='/' render={() => <CardContainer error={this.state.error}/>} />
+        <Route exact path='/' render={() => <CardContainer 
+          error={this.state.error}/>} />
         <Route path='/login' render={() => <Login />} />
         <Route path='/signup' render={() => <Signup />} />
         <Route path='/favorites' render={() => <Favorites />} />

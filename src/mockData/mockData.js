@@ -47,11 +47,18 @@ export const mockFavoriteMovieData = {
   isFavorite: true
 };
 
-export const mockUser = { 
-  id: 1, 
-  name: "Taylor", 
-  password: "password", 
-  email: "tman2272@aol.com" 
+export const mockUser = {
+  id: 1,
+  name: "Taylor",
+  password: "password",
+  email: "tman2272@aol.com"
+};
+
+export const mockNotAUser = {
+  id: 1,
+  name: "Taylor",
+  password: "password",
+  email: "tman2272@aol.com"
 };
 
 export const mockGetMoviesApiData = [

@@ -41,21 +41,20 @@ export class Login extends Component {
   render() {
     const enableSubmit = this.state.email && this.state.password; 
     return (
-      <div>
-        <h2>Login</h2>
+      <div className="login">
         <h4>Please enter your email address and password to login.</h4>
         <form onSubmit={this.handleSubmit}>
           <input 
             type="text" 
             name="email" 
             value={this.state.email}
-            placeholder="Enter your email address." 
+            placeholder="Email address" 
             onChange={this.handleChange} />
           <input 
             type="password"
             name="password"
             value={this.state.password}
-            placeholder="Enter your password"
+            placeholder="Password"
             onChange={this.handleChange} />
           <button
             type="submit" 

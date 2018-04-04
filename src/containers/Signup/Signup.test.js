@@ -40,16 +40,17 @@ describe('Signup', () => {
       password: 'password',
       errorMessage: ''
     };
+    const validation = wrapper.instance().validateEmail;
     wrapper.setState({ email: 'me@gmail.com'});
     wrapper.instance().handleSubmit(event);
-    expect(wrapper.instance().validateEmail).toHaveBeenCalledWith(mockState.email);
+    expect(validation).toHaveBeenCalledWith(mockState.email);
   });
 
   it('validates the email address input', () => {
     expect(wrapper.instance().validateEmail('me@gmail.com')).toEqual(true);
     expect(wrapper.instance().validateEmail('megmail.com')).toEqual(false);
     expect(wrapper.instance().validateEmail('megmailcom')).toEqual(false);
-  })
+  });
 
   it('calls userSignup on handleSubmit when email address is valid', () => {
     wrapper.setState({
@@ -82,7 +83,6 @@ describe('Signup', () => {
       password: "password",
       errorMessage: ""
     });
-    const mockResponse = { error: "Key (email)=(tman2272@aol.com) already exists."};
     const expected = "Email address has already been used.";
     wrapper.instance().handleSubmit(event);
     expect(wrapper.state('errorMessage')).toEqual(expected);
@@ -137,8 +137,8 @@ describe('Signup', () => {
   });
 
 
-  it.skip('updates state with an error message when credentials dont match', () => {
-    const expected = "Email and password do not match."
+  it.skip('updates state with error message when un/pw dont match', () => {
+    const expected = "Email and password do not match.";
     //mock throw error
     expect(wrapper.state('errorMessage').toEqual(expected));
   });

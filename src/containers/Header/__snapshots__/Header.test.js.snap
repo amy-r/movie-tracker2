@@ -24,19 +24,38 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h1>
-          Movie Tracker
-</h1>,
+        <div
+          className="title"
+>
+          <img
+                    alt="film reel icon"
+                    className="film-reel"
+                    src="film-reel.svg"
+          />
+          <h1>
+                    <span
+                              className="sub-title"
+                    >
+                              MY
+                    </span>
+                    M   VIE
+                    <span
+                              className="sub-title"
+                    >
+                              TRACKER
+                    </span>
+          </h1>
+</div>,
         <div
           className="nav"
 >
           <div
                     className="welcome"
           >
-                    <h3>
+                    <h5>
                               Welcome 
                               me
-                    </h3>
+                    </h5>
           </div>
           <div
                     className="nav-link-wrapper"
@@ -85,11 +104,94 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Movie Tracker",
+          "children": Array [
+            <img
+              alt="film reel icon"
+              className="film-reel"
+              src="film-reel.svg"
+/>,
+            <h1>
+              <span
+                            className="sub-title"
+              >
+                            MY
+              </span>
+              M   VIE
+              <span
+                            className="sub-title"
+              >
+                            TRACKER
+              </span>
+</h1>,
+          ],
+          "className": "title",
         },
         "ref": null,
-        "rendered": "Movie Tracker",
-        "type": "h1",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "film reel icon",
+              "className": "film-reel",
+              "src": "film-reel.svg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span
+                  className="sub-title"
+>
+                  MY
+</span>,
+                "M   VIE",
+                <span
+                  className="sub-title"
+>
+                  TRACKER
+</span>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "MY",
+                  "className": "sub-title",
+                },
+                "ref": null,
+                "rendered": "MY",
+                "type": "span",
+              },
+              "M   VIE",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "TRACKER",
+                  "className": "sub-title",
+                },
+                "ref": null,
+                "rendered": "TRACKER",
+                "type": "span",
+              },
+            ],
+            "type": "h1",
+          },
+        ],
+        "type": "div",
       },
       Object {
         "instance": null,
@@ -100,10 +202,10 @@ ShallowWrapper {
             <div
               className="welcome"
 >
-              <h3>
+              <h5>
                             Welcome 
                             me
-              </h3>
+              </h5>
 </div>,
             <div
               className="nav-link-wrapper"
@@ -150,10 +252,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": <h3>
+              "children": <h5>
                 Welcome 
                 me
-</h3>,
+</h5>,
               "className": "welcome",
             },
             "ref": null,
@@ -172,7 +274,7 @@ ShallowWrapper {
                 "Welcome ",
                 "me",
               ],
-              "type": "h3",
+              "type": "h5",
             },
             "type": "div",
           },
@@ -297,19 +399,38 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h1>
-            Movie Tracker
-</h1>,
+          <div
+            className="title"
+>
+            <img
+                        alt="film reel icon"
+                        className="film-reel"
+                        src="film-reel.svg"
+            />
+            <h1>
+                        <span
+                                    className="sub-title"
+                        >
+                                    MY
+                        </span>
+                        M   VIE
+                        <span
+                                    className="sub-title"
+                        >
+                                    TRACKER
+                        </span>
+            </h1>
+</div>,
           <div
             className="nav"
 >
             <div
                         className="welcome"
             >
-                        <h3>
+                        <h5>
                                     Welcome 
                                     me
-                        </h3>
+                        </h5>
             </div>
             <div
                         className="nav-link-wrapper"
@@ -358,11 +479,94 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Movie Tracker",
+            "children": Array [
+              <img
+                alt="film reel icon"
+                className="film-reel"
+                src="film-reel.svg"
+/>,
+              <h1>
+                <span
+                                className="sub-title"
+                >
+                                MY
+                </span>
+                M   VIE
+                <span
+                                className="sub-title"
+                >
+                                TRACKER
+                </span>
+</h1>,
+            ],
+            "className": "title",
           },
           "ref": null,
-          "rendered": "Movie Tracker",
-          "type": "h1",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "film reel icon",
+                "className": "film-reel",
+                "src": "film-reel.svg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span
+                    className="sub-title"
+>
+                    MY
+</span>,
+                  "M   VIE",
+                  <span
+                    className="sub-title"
+>
+                    TRACKER
+</span>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "MY",
+                    "className": "sub-title",
+                  },
+                  "ref": null,
+                  "rendered": "MY",
+                  "type": "span",
+                },
+                "M   VIE",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "TRACKER",
+                    "className": "sub-title",
+                  },
+                  "ref": null,
+                  "rendered": "TRACKER",
+                  "type": "span",
+                },
+              ],
+              "type": "h1",
+            },
+          ],
+          "type": "div",
         },
         Object {
           "instance": null,
@@ -373,10 +577,10 @@ ShallowWrapper {
               <div
                 className="welcome"
 >
-                <h3>
+                <h5>
                                 Welcome 
                                 me
-                </h3>
+                </h5>
 </div>,
               <div
                 className="nav-link-wrapper"
@@ -423,10 +627,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": <h3>
+                "children": <h5>
                   Welcome 
                   me
-</h3>,
+</h5>,
                 "className": "welcome",
               },
               "ref": null,
@@ -445,7 +649,7 @@ ShallowWrapper {
                   "Welcome ",
                   "me",
                 ],
-                "type": "h3",
+                "type": "h5",
               },
               "type": "div",
             },
@@ -594,18 +798,37 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h1>
-          Movie Tracker
-</h1>,
+        <div
+          className="title"
+>
+          <img
+                    alt="film reel icon"
+                    className="film-reel"
+                    src="film-reel.svg"
+          />
+          <h1>
+                    <span
+                              className="sub-title"
+                    >
+                              MY
+                    </span>
+                    M   VIE
+                    <span
+                              className="sub-title"
+                    >
+                              TRACKER
+                    </span>
+          </h1>
+</div>,
         <div
           className="nav"
 >
           <div
                     className="welcome"
           >
-                    <h3>
+                    <h5>
                               You are logged out.
-                    </h3>
+                    </h5>
           </div>
           <div
                     className="nav-link-wrapper"
@@ -653,11 +876,94 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Movie Tracker",
+          "children": Array [
+            <img
+              alt="film reel icon"
+              className="film-reel"
+              src="film-reel.svg"
+/>,
+            <h1>
+              <span
+                            className="sub-title"
+              >
+                            MY
+              </span>
+              M   VIE
+              <span
+                            className="sub-title"
+              >
+                            TRACKER
+              </span>
+</h1>,
+          ],
+          "className": "title",
         },
         "ref": null,
-        "rendered": "Movie Tracker",
-        "type": "h1",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "film reel icon",
+              "className": "film-reel",
+              "src": "film-reel.svg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span
+                  className="sub-title"
+>
+                  MY
+</span>,
+                "M   VIE",
+                <span
+                  className="sub-title"
+>
+                  TRACKER
+</span>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "MY",
+                  "className": "sub-title",
+                },
+                "ref": null,
+                "rendered": "MY",
+                "type": "span",
+              },
+              "M   VIE",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "TRACKER",
+                  "className": "sub-title",
+                },
+                "ref": null,
+                "rendered": "TRACKER",
+                "type": "span",
+              },
+            ],
+            "type": "h1",
+          },
+        ],
+        "type": "div",
       },
       Object {
         "instance": null,
@@ -668,9 +974,9 @@ ShallowWrapper {
             <div
               className="welcome"
 >
-              <h3>
+              <h5>
                             You are logged out.
-              </h3>
+              </h5>
 </div>,
             <div
               className="nav-link-wrapper"
@@ -716,9 +1022,9 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": <h3>
+              "children": <h5>
                 You are logged out.
-</h3>,
+</h5>,
               "className": "welcome",
             },
             "ref": null,
@@ -731,7 +1037,7 @@ ShallowWrapper {
               },
               "ref": null,
               "rendered": "You are logged out.",
-              "type": "h3",
+              "type": "h5",
             },
             "type": "div",
           },
@@ -854,18 +1160,37 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h1>
-            Movie Tracker
-</h1>,
+          <div
+            className="title"
+>
+            <img
+                        alt="film reel icon"
+                        className="film-reel"
+                        src="film-reel.svg"
+            />
+            <h1>
+                        <span
+                                    className="sub-title"
+                        >
+                                    MY
+                        </span>
+                        M   VIE
+                        <span
+                                    className="sub-title"
+                        >
+                                    TRACKER
+                        </span>
+            </h1>
+</div>,
           <div
             className="nav"
 >
             <div
                         className="welcome"
             >
-                        <h3>
+                        <h5>
                                     You are logged out.
-                        </h3>
+                        </h5>
             </div>
             <div
                         className="nav-link-wrapper"
@@ -913,11 +1238,94 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Movie Tracker",
+            "children": Array [
+              <img
+                alt="film reel icon"
+                className="film-reel"
+                src="film-reel.svg"
+/>,
+              <h1>
+                <span
+                                className="sub-title"
+                >
+                                MY
+                </span>
+                M   VIE
+                <span
+                                className="sub-title"
+                >
+                                TRACKER
+                </span>
+</h1>,
+            ],
+            "className": "title",
           },
           "ref": null,
-          "rendered": "Movie Tracker",
-          "type": "h1",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "film reel icon",
+                "className": "film-reel",
+                "src": "film-reel.svg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span
+                    className="sub-title"
+>
+                    MY
+</span>,
+                  "M   VIE",
+                  <span
+                    className="sub-title"
+>
+                    TRACKER
+</span>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "MY",
+                    "className": "sub-title",
+                  },
+                  "ref": null,
+                  "rendered": "MY",
+                  "type": "span",
+                },
+                "M   VIE",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "TRACKER",
+                    "className": "sub-title",
+                  },
+                  "ref": null,
+                  "rendered": "TRACKER",
+                  "type": "span",
+                },
+              ],
+              "type": "h1",
+            },
+          ],
+          "type": "div",
         },
         Object {
           "instance": null,
@@ -928,9 +1336,9 @@ ShallowWrapper {
               <div
                 className="welcome"
 >
-                <h3>
+                <h5>
                                 You are logged out.
-                </h3>
+                </h5>
 </div>,
               <div
                 className="nav-link-wrapper"
@@ -976,9 +1384,9 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": <h3>
+                "children": <h5>
                   You are logged out.
-</h3>,
+</h5>,
                 "className": "welcome",
               },
               "ref": null,
@@ -991,7 +1399,7 @@ ShallowWrapper {
                 },
                 "ref": null,
                 "rendered": "You are logged out.",
-                "type": "h3",
+                "type": "h5",
               },
               "type": "div",
             },

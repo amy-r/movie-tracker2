@@ -46,19 +46,20 @@ describe('Card', () => {
     expect(wrapper.state('favErrorHidden')).toEqual(false); 
   });
 
-  it('calls addToFavoritesDb and addFavortiesToStore on addFavorite w/params', () => {
+  it('calls addFavoritesToDb and ToStore on addFavorite w/params', () => {
     wrapper.instance().addFavorite();
     expect(addToFavoritesDb).toHaveBeenCalledWith(mockMovieData, mockUser.id);
     expect(mockAddFavoriteToStore).toHaveBeenCalledWith(mockMovieData);
   });
 
-  it('calls removeFromFavoritesDb and removeFavoriteFromStore on removeFavortie w/params', () => {
+  it('calls removeFavesFromDb and FromStore on removeFaves w/params', () => {
     wrapper = shallow(<Card movie={mockMovieData} 
       user={mockUser} 
       isFavorite={true} 
       removeFavoriteFromStore={mockRemoveFavoriteFromStore}/>);
     wrapper.instance().removeFavorite();
-    expect(removeFromFavoritesDb).toHaveBeenCalledWith(mockMovieData.movie_id, mockUser.id);
+    expect(removeFromFavoritesDb).toHaveBeenCalledWith(mockMovieData.movie_id,
+      mockUser.id);
     expect(mockRemoveFavoriteFromStore).toHaveBeenCalledWith(mockMovieData.movie_id); 
   });
 

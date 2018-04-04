@@ -72,11 +72,12 @@ ShallowWrapper {
                     </h4>
           </div>
 </div>,
-        <button
+        <img
+          alt="add to favorites button"
+          className="addFavoriteIcon"
           onClick={[Function]}
->
-          Favorite
-</button>,
+          src="fav-selected.png"
+/>,
         <div
           className="addFaveError"
           hidden={true}
@@ -85,21 +86,23 @@ ShallowWrapper {
                     You must
           </p>
           <h4>
-                    <a
-                              href="/login"
+                    <Link
+                              replace={false}
+                              to="/login"
                     >
-                              Log In
-                    </a>
+                              Login
+                    </Link>
           </h4>
           <p>
                     or
           </p>
           <h4>
-                    <a
-                              href="/signup"
+                    <Link
+                              replace={false}
+                              to="/signup"
                     >
                               Sign Up
-                    </a>
+                    </Link>
           </h4>
           <p>
                     before adding favorites.
@@ -242,12 +245,14 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Favorite",
+          "alt": "add to favorites button",
+          "className": "addFavoriteIcon",
           "onClick": [Function],
+          "src": "fav-selected.png",
         },
         "ref": null,
-        "rendered": "Favorite",
-        "type": "button",
+        "rendered": null,
+        "type": "img",
       },
       Object {
         "instance": null,
@@ -259,21 +264,23 @@ ShallowWrapper {
               You must
 </p>,
             <h4>
-              <a
-                            href="/login"
+              <Link
+                            replace={false}
+                            to="/login"
               >
-                            Log In
-              </a>
+                            Login
+              </Link>
 </h4>,
             <p>
               or
 </p>,
             <h4>
-              <a
-                            href="/signup"
+              <Link
+                            replace={false}
+                            to="/signup"
               >
                             Sign Up
-              </a>
+              </Link>
 </h4>,
             <p>
               before adding favorites.
@@ -300,24 +307,26 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": <a
-                href="/login"
+              "children": <Link
+                replace={false}
+                to="/login"
 >
-                Log In
-</a>,
+                Login
+</Link>,
             },
             "ref": null,
             "rendered": Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "host",
+              "nodeType": "class",
               "props": Object {
-                "children": "Log In",
-                "href": "/login",
+                "children": "Login",
+                "replace": false,
+                "to": "/login",
               },
               "ref": null,
-              "rendered": "Log In",
-              "type": "a",
+              "rendered": "Login",
+              "type": [Function],
             },
             "type": "h4",
           },
@@ -337,24 +346,26 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": <a
-                href="/signup"
+              "children": <Link
+                replace={false}
+                to="/signup"
 >
                 Sign Up
-</a>,
+</Link>,
             },
             "ref": null,
             "rendered": Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "host",
+              "nodeType": "class",
               "props": Object {
                 "children": "Sign Up",
-                "href": "/signup",
+                "replace": false,
+                "to": "/signup",
               },
               "ref": null,
               "rendered": "Sign Up",
-              "type": "a",
+              "type": [Function],
             },
             "type": "h4",
           },
@@ -412,11 +423,12 @@ ShallowWrapper {
                         </h4>
             </div>
 </div>,
-          <button
+          <img
+            alt="add to favorites button"
+            className="addFavoriteIcon"
             onClick={[Function]}
->
-            Favorite
-</button>,
+            src="fav-selected.png"
+/>,
           <div
             className="addFaveError"
             hidden={true}
@@ -425,21 +437,23 @@ ShallowWrapper {
                         You must
             </p>
             <h4>
-                        <a
-                                    href="/login"
+                        <Link
+                                    replace={false}
+                                    to="/login"
                         >
-                                    Log In
-                        </a>
+                                    Login
+                        </Link>
             </h4>
             <p>
                         or
             </p>
             <h4>
-                        <a
-                                    href="/signup"
+                        <Link
+                                    replace={false}
+                                    to="/signup"
                         >
                                     Sign Up
-                        </a>
+                        </Link>
             </h4>
             <p>
                         before adding favorites.
@@ -582,12 +596,14 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Favorite",
+            "alt": "add to favorites button",
+            "className": "addFavoriteIcon",
             "onClick": [Function],
+            "src": "fav-selected.png",
           },
           "ref": null,
-          "rendered": "Favorite",
-          "type": "button",
+          "rendered": null,
+          "type": "img",
         },
         Object {
           "instance": null,
@@ -599,21 +615,23 @@ ShallowWrapper {
                 You must
 </p>,
               <h4>
-                <a
-                                href="/login"
+                <Link
+                                replace={false}
+                                to="/login"
                 >
-                                Log In
-                </a>
+                                Login
+                </Link>
 </h4>,
               <p>
                 or
 </p>,
               <h4>
-                <a
-                                href="/signup"
+                <Link
+                                replace={false}
+                                to="/signup"
                 >
                                 Sign Up
-                </a>
+                </Link>
 </h4>,
               <p>
                 before adding favorites.
@@ -640,24 +658,26 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": <a
-                  href="/login"
+                "children": <Link
+                  replace={false}
+                  to="/login"
 >
-                  Log In
-</a>,
+                  Login
+</Link>,
               },
               "ref": null,
               "rendered": Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "host",
+                "nodeType": "class",
                 "props": Object {
-                  "children": "Log In",
-                  "href": "/login",
+                  "children": "Login",
+                  "replace": false,
+                  "to": "/login",
                 },
                 "ref": null,
-                "rendered": "Log In",
-                "type": "a",
+                "rendered": "Login",
+                "type": [Function],
               },
               "type": "h4",
             },
@@ -677,24 +697,26 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": <a
-                  href="/signup"
+                "children": <Link
+                  replace={false}
+                  to="/signup"
 >
                   Sign Up
-</a>,
+</Link>,
               },
               "ref": null,
               "rendered": Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "host",
+                "nodeType": "class",
                 "props": Object {
                   "children": "Sign Up",
-                  "href": "/signup",
+                  "replace": false,
+                  "to": "/signup",
                 },
                 "ref": null,
                 "rendered": "Sign Up",
-                "type": "a",
+                "type": [Function],
               },
               "type": "h4",
             },

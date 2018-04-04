@@ -63,27 +63,27 @@ export class Signup extends Component {
       this.state.name &&
       this.state.email &&
       this.state.password;
-    return <div>
-      <h2>Sign Up</h2>
-      <h4>Please enter your name, email address, and password to create an account.</h4>
+    return <div className="signup">
+      <h4>Please enter your name, email address, <br />
+      and password to create an account.</h4>
       <form onSubmit={this.handleSubmit}>
         <input 
           type="text" 
           name="name" 
           value={this.state.name} 
-          placeholder="Enter your name." 
+          placeholder="Name" 
           onChange={this.handleChange} />
         <input 
           type="text" 
           name="email" 
           value={this.state.email} 
-          placeholder="Enter your email address." 
+          placeholder="Email address" 
           onChange={this.handleChange} />
         <input 
           type="password" 
           name="password" 
           value={this.state.password} 
-          placeholder="Enter your password" 
+          placeholder="Password" 
           onChange={this.handleChange} />
         <button 
           type="submit" 

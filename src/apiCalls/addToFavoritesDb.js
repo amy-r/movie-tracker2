@@ -1,4 +1,5 @@
 export const addToFavoritesDb = async (movieData, userId) => {
+  // eslint-disable-next-line
   const favoriteData = { ...movieData, user_id: userId };
   const url = "api/users/favorites/new";
   try {

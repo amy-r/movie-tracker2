@@ -26,12 +26,69 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
-        <h2>
-          Favorites
-</h2>,
-        <div
-          className="card-container"
+      "children": <div
+        className="favorites"
+>
+        <Connect(Card)
+                isFavorite={true}
+                movie={
+                        Object {
+                                "movie_id": "1",
+                                "title": "movie1",
+                              }
+                }
+        />
+</div>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Connect(Card)
+            isFavorite={true}
+            movie={
+                        Object {
+                                    "movie_id": "1",
+                                    "title": "movie1",
+                                  }
+            }
+/>,
+        ],
+        "className": "favorites",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "class",
+          "props": Object {
+            "isFavorite": true,
+            "movie": Object {
+              "movie_id": "1",
+              "title": "movie1",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="favorites"
 >
           <Connect(Card)
                     isFavorite={true}
@@ -43,22 +100,9 @@ ShallowWrapper {
                     }
           />
 </div>,
-      ],
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Favorites",
-        },
-        "ref": null,
-        "rendered": "Favorites",
-        "type": "h2",
       },
-      Object {
+      "ref": null,
+      "rendered": Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
@@ -74,7 +118,7 @@ ShallowWrapper {
               }
 />,
           ],
-          "className": "card-container",
+          "className": "favorites",
         },
         "ref": null,
         "rendered": Array [
@@ -96,86 +140,6 @@ ShallowWrapper {
         ],
         "type": "div",
       },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <h2>
-            Favorites
-</h2>,
-          <div
-            className="card-container"
->
-            <Connect(Card)
-                        isFavorite={true}
-                        movie={
-                                    Object {
-                                                "movie_id": "1",
-                                                "title": "movie1",
-                                              }
-                        }
-            />
-</div>,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Favorites",
-          },
-          "ref": null,
-          "rendered": "Favorites",
-          "type": "h2",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <Connect(Card)
-                isFavorite={true}
-                movie={
-                                Object {
-                                                "movie_id": "1",
-                                                "title": "movie1",
-                                              }
-                }
-/>,
-            ],
-            "className": "card-container",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": "1",
-              "nodeType": "class",
-              "props": Object {
-                "isFavorite": true,
-                "movie": Object {
-                  "movie_id": "1",
-                  "title": "movie1",
-                },
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
-          "type": "div",
-        },
-      ],
       "type": "div",
     },
   ],

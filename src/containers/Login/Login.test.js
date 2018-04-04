@@ -3,7 +3,6 @@ import { Login, mapDispatchToProps } from './Login';
 import { shallow } from 'enzyme';
 import { userLogin } from '../../apiCalls/userLogin';
 import { getFavorites } from '../../apiCalls/getFavorites';
-import { mockUser } from '../../mockData/mockData'
 
 jest.mock('../../apiCalls/userLogin');
 jest.mock('../../apiCalls/getFavorites');
@@ -32,7 +31,7 @@ describe('Login', () => {
   it('loads with an emtpy state', () => {
     expect(wrapper.state('email')).toEqual('');
     expect(wrapper.state('password')).toEqual('');
-  })
+  });
 
 
   it('updates the state as the user types', () => {

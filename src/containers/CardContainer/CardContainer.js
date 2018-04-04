@@ -24,7 +24,6 @@ export const CardContainer = ({movies, favorites, error}) => {
   }
   return (
     <div>
-      <h2>Movies</h2>
       <div className="card-container">
         {displayCards}
       </div>
@@ -40,7 +39,8 @@ export const mapStateToProps = state => ({
 
 CardContainer.propTypes = {
   movies: PropTypes.array,
-  favorites: PropTypes.array
+  favorites: PropTypes.array,
+  error: PropTypes.string
 };
 
 export default connect(mapStateToProps)(CardContainer);

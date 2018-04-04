@@ -1,7 +1,6 @@
 import React from 'react';
 import App, { mapDispatchToProps } from './App';
-import { shallow, mount } from 'enzyme';
-import { getMovies } from '../../apiCalls/getMovies';
+import { shallow } from 'enzyme';
 
 
 describe("App", () => {

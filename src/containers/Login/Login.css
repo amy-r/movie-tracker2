@@ -1,0 +1,73 @@
+.login {
+  width: 500px;
+  height: 250px;
+  padding: 30px;
+  margin: 160px auto 0 auto;
+  background-color: #1481BA;
+}
+
+h4 {
+  color: #f5f5f5;
+  margin: 0px 20px 0px 20px;
+}
+
+form {
+  margin: 30px auto;
+  width: 320px;
+}
+
+input {
+  display: block;
+  padding-left: 5px;
+  width: 300px;
+  height: 35px;
+  margin: 25px auto;
+  font-size: 20px;
+}
+
+h2.errorMessage {
+  color: #034748;
+  margin-bottom: 0;
+}
+
+form button {
+  font-size: 20px;
+  width: 307px;
+  height: 35px;
+  background-color: #034748;
+  color: #f5f5f5;
+}
+
+button:disabled {
+  background-color: #11B5E4;
+}
+
+@media screen and (max-width: 720px){
+
+  .login {
+    width: 90%;
+    height: 280px;
+    padding: 10px;
+  }
+
+}
+
+@media screen and (max-width: 500px){
+
+  .login {
+    padding: 10px;
+  }
+  
+  input, form button {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  form {
+  margin: auto;
+  width: 90%;
+}
+
+
+}
+
