@@ -117,6 +117,4 @@ describe('Login', () => {
     mapped.validateUser();
     expect(mockDispatch).toHaveBeenCalled();
   });
-
-
 });

@@ -2,8 +2,10 @@ import React from 'react';
 import { Signup, mapDispatchToProps } from './Signup';
 import { shallow } from 'enzyme';
 import { userSignup } from '../../apiCalls/userSignup';
+import { userLogin } from '../../apiCalls/userLogin';
 
 jest.mock('../../apiCalls/userSignup');
+jest.mock('../../apiCalls/userLogin.js');
 
 describe('Signup', () => {
 
@@ -61,6 +63,23 @@ describe('Signup', () => {
     
     wrapper.instance().handleSubmit(event);
     expect(userSignup).toHaveBeenCalledWith(wrapper.state());
+  });
+
+  it('calls userLogin on handleSubmit when email address is valid', () => {
+    wrapper.setState({
+      name: "me",
+      email: "me@gmail.com",
+      password: "password",
+      errorMessage: ""
+    });
+
+    wrapper.instance().handleSubmit(event);
+    expect(userLogin).toHaveBeenCalledWith(wrapper.state());
+  });
+
+  it("calls validateUser on handleSubmit", () => {
+    wrapper.instance().handleSubmit(event);
+    expect(mockValidateUser).toHaveBeenCalled();
   });
 
   it('updates state with an error when email is invalid', () => {

@@ -13,12 +13,12 @@ import PropTypes from 'prop-types';
 import { movieCleaner } from '../../apiCalls/movieCleaner';
 
 
-class App extends Component {
-  constructor() {
-    super();
+export class App extends Component {
+  constructor(props) {
+    super(props);
     this.state = {
       error: ''
-    }
+    };
   }
 
   async componentDidMount() {
@@ -27,7 +27,7 @@ class App extends Component {
       const cleanMovies = movieCleaner(movies);
       this.props.addMovies(cleanMovies);     
     } catch (error) {
-      this.setState({error})
+      this.setState({error});
     }
   }
 
