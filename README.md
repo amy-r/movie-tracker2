@@ -16,9 +16,9 @@ My Movie Tracker is an application that allows users to view information (title,
 
 ## Contributors
 
-* Aldo Mercado
-* Michael Gatewood
-* Amy Russell
+* [Aldo Mercado](https://github.com/amercado1014)
+* [Michael Gatewood](https://github.com/mngatewood)
+* [Amy Russell](https://github.com/amy-r)
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
